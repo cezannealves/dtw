@@ -1,6 +1,6 @@
 # DTW
 
-(Algorithmically) Time and memory efficient implementation of Dynamic time warping distance measure for temporal series with the following improovements.
+(Algorithmically) Time and memory efficient implementation of Dynamic Time Warping distance measure for temporal series with the following improovements.
 
 ![DTW](dtw.png)
 
