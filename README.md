@@ -2,6 +2,8 @@
 
 (Algorithmically) Time and memory efficient implementation of Dynamic time warping distance measure for temporal series with the following improovements.
 
+![DTW](dtw.png)
+
 * Search pruning
 
   If the intermediary distance exceeds an optional threshold the computation is aborted and returns infinite distance. This is useful for k-nn searches.
@@ -18,8 +20,13 @@
 
   Since the computation only requires the immediate previous neighbors, the values are stored in a matrix with only 2 columns to store the current and previous computations.
 
+![](line-drawing.png)
+
+
+![](bands.PNG)
+
 Due to the highly conditional nature of the DTW algorithm, batch operations cannot be used. Lists were used instead of numpy arrays, which are slower in point operations.
 
-The notebook has the code, an example run and a benchmark.
+The [notebook](dtw.ipynb) has the code, an example run and a benchmark.
 
-More details of implementations decisions and performance in the report (in Portuguese)
+More details of implementations decisions and performance in the [report](relatorio3-cezanne.pdf) (in Portuguese)
